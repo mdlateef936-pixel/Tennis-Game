@@ -152,4 +152,32 @@ function gameLoop() {
 }
 
 gameLoop();
+
+const upBtn = document.getElementById("upBtn");
+const downBtn = document.getElementById("downBtn");
+
+upBtn.addEventListener("pointerdown", () => {
+    upPressed = true;
+});
+
+upBtn.addEventListener("pointerup", () => {
+    upPressed = false;
+});
+
+upBtn.addEventListener("pointerleave", () => {
+    upPressed = false;
+});
+
+downBtn.addEventListener("pointerdown", () => {
+    downPressed = true;
+});
+
+downBtn.addEventListener("pointerup", () => {
+    downPressed = false;
+});
+
+downBtn.addEventListener("pointerleave", () => {
+    downPressed = false;
+});
+
           
